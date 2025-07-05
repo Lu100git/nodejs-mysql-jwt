@@ -29,7 +29,7 @@ ater mysql is installed, you can copy paste database.sql
 into mysql sheell after login, or run it on mysql worbench to create the database
 after the database is created, if you already installed nodeJS in your machine
 all you have to do, is to run npm install, so you can get all the node_mdules
-ALSO, DON'T FORGTE TO CREATE A .env file in the root directory so you can
+ALSO, DON'T FORGTE TO CREATE A .env file in the root directory of this project so you can
 assign the enviromental variables, here is an example:
 
 
