@@ -12,3 +12,8 @@ and send a body like this:
 then you can use mysql workbench, or access mysql directly on the shell and you will see the hashed password
 after you attempt to login, then you can use username and password you entered, nodeJS will handle the hashes,
 I already tested and it works :)
+
+
+I own a lot to midulive, if it wasn't for him, I wouldn't be able to get this project done
+I believe he is from spain, but his spanish web dev tutorials are fire!
+https://www.youtube.com/watch?v=UqnnhAZxRac
