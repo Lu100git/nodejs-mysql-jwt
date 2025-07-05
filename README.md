@@ -37,15 +37,16 @@ PORT=8000
 SALT_ROUNDS=10
 
 
-SECRET_JWT_KEY=<your secret key>
-
-DB_USERNAME=<your mysql user>
+SECRET_JWT_KEY=your secret key
 
 
-DB_PASSWORD=<your mysql user password>
+DB_USERNAME=your mysql user
 
 
-DB_NAME=<your database>
+DB_PASSWORD=your mysql user password
+
+
+DB_NAME=your database
 
 
 finally run server.js:
