@@ -1,0 +1,27 @@
+/* this CSS is my work, yes I do not know how to center a DIV 
+but I did my best  */
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+    background: black;
+    color: rgb(89, 255, 0);
+}
+
+.login-block{
+    margin: 10% 0 0 25%;
+    padding: 15%;
+}
+
+.login-content{
+    margin-right: 45%;
+    padding: 10px;
+    border:  10px solid rgb(0, 255, 166);
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px 13px rgb(13, 255, 0);
+}

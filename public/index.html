@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS Example</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/style">
+</head>
+<body>
+    <div class="login-block">
+        <div class="login-content">
+            <h1>Node JS Loggin example </h1>
+            <h3>using JWT and session cookies, and MYSQL</h3>
+            <!-- I used Leo AI copy paste on this part, I was going mad on the server side code >x< -->
+            <h2>Login</h2>
+            <form id="loginForm">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required><br><br>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required><br><br>
+          
+              <button type="submit">Login</button>
+            </form>
+          
+            <p id="message"></p>
+        </div>
+
+        <!-- I used the AI copy paste here too, because screw html and javascript, I have enought problems already, 
+         I only added the endpot on the fetch function, and the window.ref -->
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', async function (e) {
+                e.preventDefault(); // Prevent the form from submitting the default way
+            
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+            
+                try {
+                const response = await fetch('http://localhost:8000/api/login', {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+            
+                const result = await response.json();
+                
+                if (response.ok) {
+                    document.getElementById('message').textContent = 'Login successful!';
+                    window.location.href = "http://localhost:8000/secret"
+                } else {
+                    document.getElementById('message').textContent = result.message || 'Login failed';
+                }
+                } catch (error) {
+                console.error('Fetch error:', error);
+                document.getElementById('message').textContent = 'An error occurred.';
+                }
+            });
+        </script>
+
+    </div>    
+
+</body>
+</html>
