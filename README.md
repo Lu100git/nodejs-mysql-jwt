@@ -17,3 +17,16 @@ I already tested and it works :)
 I own a lot to midulive, if it wasn't for him, I wouldn't be able to get this project done
 I believe he is from spain, but his spanish web dev tutorials are fire!
 https://www.youtube.com/watch?v=UqnnhAZxRac
+
+instructions:
+install mysql,
+make sure once it's installed run this command:
+sudo mysql_secure_installation
+this will properly configure MySQL so you don't get login or connection issues
+ater mysql is installed, you can copy paste database.sql 
+into mysql sheell after login, or run it on mysql worbench to create the database
+after the database is created, if you already installed nodeJS in your machine
+all you have to do, is to run npm install, so you can get all the node_mdules
+before you run server.js
+
+that's pretty much it
