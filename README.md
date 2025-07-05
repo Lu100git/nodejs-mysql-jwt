@@ -29,12 +29,22 @@ after the database is created, if you already installed nodeJS in your machine
 all you have to do, is to run npm install, so you can get all the node_mdules
 ALSO, DON'T FORGTE TO CREATE A .env file in the root directory so you can
 assign the enviromental variables, here is an example:
+
+
 PORT=8000
+
+
 SALT_ROUNDS=10
+
+
 SECRET_JWT_KEY=<your secret key>
 
 DB_USERNAME=<your mysql user>
+
+
 DB_PASSWORD=<your mysql user password>
+
+
 DB_NAME=<your database>
 
 
