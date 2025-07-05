@@ -19,6 +19,8 @@ I believe he is from spain, but his spanish web dev tutorials are fire!
 https://www.youtube.com/watch?v=UqnnhAZxRac
 
 instructions:
+
+
 install mysql,
 make sure once it's installed run this command:
 sudo mysql_secure_installation
